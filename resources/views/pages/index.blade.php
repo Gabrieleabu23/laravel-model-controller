@@ -1,7 +1,5 @@
-@extends('layouts.main-layout')
-@section('head')
-    <title>Home</title>
-@endsection
-@section('content')
-    <h1>Hello, World!</h1>
-@endsection
+<ul>
+    @foreach($movies as $movie)
+        <li>{{ $movie-> original_title  }}</li>
+    @endforeach
+</ul>
